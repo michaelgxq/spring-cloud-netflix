@@ -68,10 +68,10 @@
 				<groupId>io.spring.javaformat</groupId>
 				<artifactId>spring-javaformat-maven-plugin</artifactId>
 			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-checkstyle-plugin</artifactId>
-			</plugin>
+<!--			<plugin>-->
+<!--				<groupId>org.apache.maven.plugins</groupId>-->
+<!--				<artifactId>maven-checkstyle-plugin</artifactId>-->
+<!--			</plugin>-->
 		</plugins>
 	</build>
 	<dependencyManagement>
@@ -139,10 +139,10 @@
 	</dependencyManagement>
 	<reporting>
 		<plugins>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-checkstyle-plugin</artifactId>
-			</plugin>
+<!--			<plugin>-->
+<!--				<groupId>org.apache.maven.plugins</groupId>-->
+<!--				<artifactId>maven-checkstyle-plugin</artifactId>-->
+<!--			</plugin>-->
 		</plugins>
 	</reporting>
 	<modules>
@@ -252,7 +252,8 @@
 						<artifactId>maven-surefire-plugin</artifactId>
 						<configuration>
 							<!-- Sets the VM argument line used when unit tests are run. -->
-							<argLine>${surefireArgLine}</argLine>
+<!--							<argLine>${surefireArgLine}</argLine>-->
+							<skipTests>true</skipTests>
 						</configuration>
 					</plugin>
 				</plugins>

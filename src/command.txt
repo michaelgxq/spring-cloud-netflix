@@ -1,0 +1,1 @@
+mvnw clean install -B -Dgpg.skip=true -Dmaven.test.skip=true
